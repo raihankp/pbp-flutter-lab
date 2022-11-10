@@ -1,16 +1,25 @@
 # counter_7
 
-A new Flutter project.
+### Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
+- Stateless widget adlaah widget yang dimuat secara statis. Seluruh konfigurasi yang dimuat didalamnya telah diinisiasikan sejak awal widget tersebut dibuat. Stateless widget adalah sebuah widget yang tidak dapat diubah dan tidak akan pernah berubah.
+- Stateful widget merupakan suatu widget yang sifatnya dinamis atau dapat berubah-ubah, kebalikan dari stateless widget. Stateful widget dapat mengubah tampilan, menambah widget, mengubah nilai variabel, icon, warna, dan lain-lain.
 
-## Getting Started
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+1. Text: Menampilkan Teks
+2. Column: Menampung widget dan disusun secara vertikal
+3. Row: Menampung widget dan disusun secara horizontal
+4. FloatingActionButton: Widget button yang berada di depan widget lainnya
+5. Icon: Menampilkan suatu ikon
+6. Center: Layout widget yang berfungsi untuk menengahkan childnya
 
-This project is a starting point for a Flutter application.
+### Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
+setState() berfungsi untuk mengubah suatu state yang ada di stateful widget. Variabel yang terdampak di fungsi tersebut adalah _counter.
 
-A few resources to get you started if this is your first Flutter project:
+### Jelaskan perbedaan antara const dengan final.
+Final harus diinisiasikan terlebih dahulu, tidak bisa diubah valuenya, dan harus sudah diketahui valuenya pada saat run time. Sedangkan, const bisa diubah valuenya dan valuenya diketahui pada saat compile time.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Membuat projek dengan `flutter create counter_7`
+2. Membuat fungsi untuk mendecrement counter
+3. Menambahkan widget FloatingActionButton kedua untuk mendecrement
+4. Membuat Text berwarna merah ketika counter % 2 = 0, dan biru ketika tidak terpenuhi. 
