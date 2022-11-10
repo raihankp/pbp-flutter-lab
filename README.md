@@ -21,5 +21,5 @@ Final harus diinisiasikan terlebih dahulu, tidak bisa diubah valuenya, dan harus
 ### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Membuat projek dengan `flutter create counter_7`
 2. Membuat fungsi untuk mendecrement counter
-3. Menambahkan widget FloatingActionButton kedua untuk mendecrement
+3. Menambahkan widget FloatingActionButton kedua untuk mendecrement dan akan hilang apabila counternya = 0
 4. Membuat Text berwarna merah ketika counter % 2 = 0, dan biru ketika tidak terpenuhi. 
