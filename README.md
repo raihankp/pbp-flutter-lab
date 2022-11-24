@@ -60,3 +60,31 @@ Navigator bekerja dengan menggunakan struktur stack, dimana route yang berada di
 6. Import semua file .dart ke masing-masing file
 7. Membuat tampilan setiap elemen pada list dengan menggunakan ListView.builder()
 8. Membuat card yang menampilkan title, nominal, dan type budget
+
+
+## Tugas 9
+
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisa, tetapi kita tidak bisa memastikan apakah data JSON yang diambil sudah memiliki bentuk seperti yang kita inginkan. Sehingga akan lebih baik apabila kita membuat model terlebih dahulu.
+
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+1. Stack: Memposisikan children relatif terhadap tepi-tepi kotak.
+2. Text: Menampilkan Teks
+3. Column: Menampung widget dan disusun secara vertikal
+4. TextSpan: Menampilkan teks immutable secara merentang
+5. SizedBox: Menampilkan sebuah box dengan ukuran tertentu
+6. Container: Penampung berbagai widget untuk menerapkan posisi, ukuran, dan property lainnya secara seragam
+7. FutureBuilder: Widget yang membangun tampilan dirinya sendiri. Berguna untuk menampilkan berbagai widget yang sama dengan data yang berbeda.
+8. MainAxisAlignment: Menempatkan children sepanjang sumbu utama dalam sebuah layout flex
+9. EdgeInsets: Memberikan Offset ke 4 arah kardinal yang bersifat immutable
+
+### Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+Menambahkan depedensi http, kemudian melakukan GET pada data json yang selanjutnya dikonversikan ke dalam suatu model yang dibuat. Data json kemudian ditampilkan dengan menggunakan FutureBuilder.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Menambahkan dependensi HTTP pada proyek flutter sehingga dapat mengambil data dari internet
+2. Membuat model serialisasi data JSON dari MyWatchlist
+3. Fetch data MyWatchlist secara asynchronous dari website Heroku Tugas 3, lalu serialisasi data tersebut
+4. Membuat halaman yang menampilkan list dari objek-objek MyWatchlist menggunakan data yang telah diserialisasi
+5. Mem-wrap setiap objek sebagai tombol dengan routing ke halaman detail watchlist
+6. Membuat halaman detail watchlist yang menampilkan atribut-atribut dari suatu objek MyWatchlist
